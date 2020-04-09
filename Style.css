@@ -1,0 +1,1473 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+/* This is the modal css */
+
+.modal {
+
+  position: fixed;
+
+  top: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  background-color: black;
+
+}
+
+.modal-dialog {
+
+	position: fixed;  margin: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  padding: 0;
+
+}
+
+.modal-content {
+
+	position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  border-radius: 0;
+
+  box-shadow: none;
+
+  display: block;
+
+  width: 100vh !important;
+
+  height: 100vw !important;
+
+  transform: rotate(90deg);
+
+  transform-origin: bottom left;
+
+  margin-top: -100vw;
+
+ z-index: 9;
+
+}
+
+.modal-body {
+
+	position: absolute;
+
+  top: 0px;
+
+  bottom: 0px;
+
+  width: 100%;
+
+  height: 100%;
+
+  font-weight: 300;
+
+  overflow: auto;
+
+background-color: black;
+
+}
+
+/* This is general css */
+
+.body{
+
+background-color: black;
+
+width: 100%;
+
+  height: 100%;
+
+padding: 0;
+
+  -webkit-touch-callout : none;
+
+		  -webkit-user-select : none;
+
+		  -khtml-user-select : none;
+
+		  -moz-user-select : none;
+
+		  -ms-user-select : none;
+
+		  -webkit-tap-highlight-color: transparent; 
+
+		  user-select : none;
+
+}
+
+/* This is plyr basic beginning */
+
+.plyr {
+
+  border-radius: 4px;
+
+  margin-bottom: 1px;
+
+  font-family: Georgia, Times, "Times New Roman", serif;
+
+}
+
+.plyr--hide-controls .title {
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+.plyr--hide-controls .button {
+
+    opacity: 0;
+
+    pointer-events: none;
+
+}
+
+.plyr--hide-controls .large {
+
+   opacity: 0;
+
+   pointer-events: none;
+
+}
+
+.plyr--hide-controls .fa-close {
+
+   opacity: 0;
+
+   pointer-events: none;
+
+}
+
+.plyr--hide-controls .central {
+
+   opacity: 0;
+
+   pointer-events: none;
+
+}
+
+.plyr--hide-controls #playb {
+
+   opacity: 0;
+
+   pointer-events: none;
+
+}
+
+.plyr--hide-controls #pauseb {
+
+   opacity: 0;
+
+   pointer-events: none;
+
+}
+
+.container{
+
+  position: absolute;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  z-index: 4;
+
+  visibility: visible;
+
+  overflow: auto;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%,-50%);
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+padding: 0px;
+
+z-index: 9;
+
+}
+
+#player{
+
+position: relative;
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+}
+
+/* This is plyr basic end */
+
+/* This is plyr ellipsis css */
+
+#myperfect{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+	object-fit: none;
+
+}
+
+#myfill{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    object-fit: fill;
+
+}
+
+#mycover{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    object-fit: cover;
+
+}
+
+#my10{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    padding-left: 35%;
+
+     padding-right: 35%;
+
+    padding-top: 0%;
+
+    padding-bottom: 0%;
+
+}
+
+#my16{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    padding-left: 5%;
+
+     padding-right: 5%;
+
+    padding-top: 0%;
+
+    padding-bottom: 0%;
+
+}
+
+#my4{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    padding-left: 15%;
+
+     padding-right: 15%;
+
+    padding-top: 0%;
+
+    padding-bottom: 0%;
+
+}
+
+#my2{
+
+	width: 100%;
+
+	height: 100vw;
+
+    min-width: 100%; 
+
+    min-height: 100%; 
+
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    padding-left: 25%;
+
+     padding-right: 25%;
+
+    padding-top: 0%;
+
+    padding-bottom: 0%;
+
+}
+
+/* This is ellipsis css end */
+
+/* This is preloader beginning */
+
+.preloader{
+
+  position:absolute;
+
+  top:0;
+
+  left:0;
+
+  right:0;
+
+  bottom:0;
+
+  margin:auto;
+
+  width:100vw;
+
+  height:100vh;
+
+  background:#000000;
+
+  visibility:hidden;
+
+  opacity:0;
+
+  transition:all 0.5s ease;
+
+  z-index:99999999999999;
+
+}
+
+.preloader_inner {
+
+  position: absolute;
+
+  top: 0;
+
+  bottom: 0;
+
+  left: 0;
+
+  right: 0;
+
+  margin: auto;
+
+  width: 4em;
+
+  height: 4em;
+
+  line-height: 4em;
+
+  text-align: center;
+
+  color: #ff6600;
+
+  font-weight: bold;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+}
+
+.page{
+
+  visibility:hidden;
+
+  opacity:0;
+
+  transition:all 0.5s ease;
+
+  margin-bottom: 0px;
+
+}
+
+.show{
+
+  visibility:visible !important;
+
+  opacity:1 !important;
+
+  transition:all 0.5s ease;
+
+}
+
+/* This is preloader end*/
+
+/* This is extra buttons css */
+
+.title {
+
+position:absolute;
+
+top: 12px;
+
+left:10px;
+
+color:#fff;
+
+padding: 1px;
+
+outline: none;
+
+z-index: 9;
+
+}
+
+.button {
+
+position:absolute;
+
+top: 12px;
+
+right:10px;
+
+padding:1px;
+
+outline: none;
+
+}
+
+.centro {
+
+position:absolute;
+
+top: 12px;
+
+left: calc(48% - 2px);
+
+color:#fff;
+
+padding: 1px;
+
+outline: none;
+
+z-index: 9;
+
+} 
+
+/* This is the body play overlay*/
+
+.large{
+
+position: absolute;
+
+outline: none;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100vw;
+
+border: none;
+
+padding: 19%;
+
+}
+
+/* This is body play overlay end */
+
+#larger{
+
+ background-color: #ffffff00;
+
+ color: white;
+
+  padding: 0px;
+
+  font-size: 16px;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 0px;
+
+  height: 0px;
+
+  outline: none;
+
+    top: 0%;
+
+    right: 0;
+
+    bottom: 0;
+
+    left: 0; 
+
+    z-index: 9;
+
+}
+
+.fa-close{
+
+border-radius: 4px;
+
+  font-size: 30px;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 30px;
+
+  height: 30px;
+
+  outline: none;
+
+color:#fff;
+
+padding: 1px;
+
+outline: none;
+
+z-index: 9;
+
+}
+
+.fa-close:hover, .fa-close:focus{
+
+background-color: #ff6600;
+
+}
+
+.changer{
+
+background-image: url('https://1.bp.blogspot.com/-6QcA-bq0jv4/XjGdtqjY91I/AAAAAAAACKQ/WKD9aQNIOmIUnFH7XsjhZYEcIcttN0vuwCLcBGAsYHQ/s1600/attachment.png');
+
+background-repeat: no-repeat;
+
+background-size: 100%;
+
+background-position: 50% 50%;
+
+ background-color: #ffffff00;
+
+border-radius: 4px;
+
+  color: white;
+
+  padding: 1px;
+
+  font-size: 16px;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 30px;
+
+  height: 30px;
+
+  outline: none;
+
+}
+
+.changer:hover, .changer:focus{
+
+background-color: #ff6600;
+
+}
+
+.dropbtn {
+
+  background-image: url('https://1.bp.blogspot.com/-X_zZ-m5R_qg/XjGdwcR-0aI/AAAAAAAACKU/QbOy8Ra7yeYV5_6R82LAiOx1Ig-KodZRgCLcBGAsYHQ/s1600/attachment.png');
+
+  background-repeat: no-repeat;
+
+  background-size: 80%;
+
+  background-position: 50% 50%;
+
+  background-color: #ffffff00;
+
+  border-radius: 4px;
+
+  color: white;
+
+  padding: 0px;
+
+  padding-top: 1px;
+
+  font-size: 16px;
+
+  border: none;
+
+  cursor: pointer;
+
+  width: 30px;
+
+  height: 30px;
+
+  outline: none;
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+
+  background-color: #ff6600;
+
+}
+
+.dropdown {
+
+  position: relative;
+
+  display: inline-block;
+
+}
+
+.dropdown-content {
+
+  display: none;
+
+  position: absolute;
+
+  background-color: #ffffff00;
+
+  min-width: 360px;
+
+  overflow: auto;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+  z-index: 1;
+
+  margin:0;
+
+  padding:0;
+
+  list-style:none;
+
+  right: 0;
+
+}
+
+.show {display: block;}
+
+.change {
+
+  position: absolute;
+
+  top: 50%;
+
+  right: 50%;
+
+  bottom: 0;
+
+  left: 0;
+
+  margin: 0;
+
+  border-radius: 0;
+
+  box-shadow: none;
+
+  display: block;
+
+  width: 100vh;
+
+  height: 100vw;
+
+  transform: translate(0vw, 50vh) rotate(-90deg);
+
+  transform-origin: top left;
+
+  }
+
+.ratio{
+
+color: white;
+
+width: 35px;
+
+height: 30px;
+
+margin: 4px 2px;
+
+border-radius: 5px;
+
+background-color: #ff6600;
+
+border: none;
+
+font-size: 13px;
+
+display: inline-block;
+
+text-align: center;
+
+}
+
+.ratio:hover, .ratio:focus{
+
+color: #ff6600 !important;
+
+background-color: white !important;
+
+}
+
+.cut{
+
+display: none;
+
+width: 30px;
+
+height: 32px;
+
+padding: 0;
+
+text-align: center;
+
+}
+
+/* This is the end of the extra buttons */
+
+/* This is synopsis css */
+
+.h5{
+
+color: #ff9900;
+
+margin: 5px;
+
+margin-top: 9px;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+text-transform: capitalize;
+
+font-weight: bold;
+
+}
+
+  @media screen and (max-width: 329px) {
+
+.header img{
+
+border-radius: 4px;
+
+border: 1px solid #ff6600;
+
+}
+
+.columns{
+
+position: relative;
+
+display: inline-block;
+
+padding : 0;
+
+margin: 0;
+
+margin-right: 5px;
+
+margin-left: 5px;
+
+top: 0;
+
+left: 0;
+
+text-align: center;
+
+cursor: pointer;
+
+width: 15%;
+
+height: 18px;
+
+border-radius: 4px;
+
+background-color: #ff9900;
+
+color: black;
+
+font-size: 9px;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+text-transform: capitalize;
+
+vertical-align: middle;
+
+}
+
+.columns p{
+
+text-align: center;
+
+padding-top: 5px;
+
+}
+
+#trailer {
+
+  display: none;
+
+  width: 100%;
+
+  text-align: center;
+
+  margin-top: 0px;
+
+  margin-bottom: 10px;
+
+  position: relative;
+
+  height: 0;
+
+  padding-bottom: 56.25%;
+
+  border-radius: 4px;
+
+z-index: 9;
+
+}
+
+#trailervideo {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 1px solid #ff6600;
+
+  border-radius: 4px;
+
+z-index: 9;
+
+}
+
+#i{
+
+padding-right: 3px;
+
+font-size: 9px;
+
+}
+
+.synopsis{
+
+color: white;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+font-size: 9px;
+
+}
+
+}
+
+.header{
+
+position: relative;
+
+  width: 50%;
+
+  height: auto;
+
+  padding : 0;
+
+  margin: 0 auto;
+
+  top: 0;
+
+  left: 0;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+}
+
+.header img{
+
+  width: 100%;
+
+  height: auto;
+
+  padding : 0;
+
+  margin: 0 auto;
+
+  top: 0;
+
+  left: 0;
+
+  text-align: center;
+
+  cursor: pointer;
+
+  text-decoration: none;
+
+  border: 2px solid #ff6600;
+
+  border-radius: 7px;
+
+}
+
+.rows{
+
+width: 100%;
+
+text-align: center;
+
+}
+
+.rowss{
+
+width: 100%;
+
+text-align: center;
+
+}
+
+#rower, #downloads, #rowers, #downloadss{
+
+display: none;
+
+  width: 100%;
+
+  height: 100%;
+
+  text-align: center;
+
+  margin-top: 0px;
+
+  margin-bottom: 10px;
+
+  position: relative;
+
+  padding-bottom: 3.25%;
+
+  border-radius: 8px;
+
+}
+
+.columns{
+
+position: relative;
+
+display: inline-block;
+
+padding : 0;
+
+margin: 0;
+
+margin-right: 5px;
+
+margin-left: 5px;
+
+top: 0;
+
+left: 0;
+
+text-align: center;
+
+cursor: pointer;
+
+width: 29%;
+
+height: 26px;
+
+border-radius: 9px;
+
+background-color: #ff9900;
+
+color: black;
+
+font-size: 13px;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+text-transform: capitalize;
+
+vertical-align: middle;
+
+z-index: 9;
+
+}
+
+.columns p{
+
+text-align: center;
+
+padding-top: 5px;
+
+z-index: 9;
+
+}
+
+#trailer {
+
+  display: none;
+
+  width: 100%;
+
+  text-align: center;
+
+  margin-top: 0px;
+
+  margin-bottom: 10px;
+
+  position: relative;
+
+  height: 0;
+
+  padding-bottom: 56.25%;
+
+  border-radius: 8px;
+
+  z-index: 9;
+
+}
+
+#trailervideo {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    border: 2px solid #ff6600;
+
+  border-radius: 7px;
+
+z-index: 9;
+
+}
+
+#i{
+
+padding-right: 3px;
+
+font-size: 14px;
+
+}
+
+.synopsis{
+
+color: white;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+font-size: 12px;
+
+margin-top: 0px;
+
+}
+
+/* This is the end of the synopsis css*/
+
+/* This is plyr control override css */
+
+button:hover, button:focus{
+
+background-color: #ff6600 !important;
+
+}
+
+ @media screen and (max-width: 480px) { 
+
+.plyr__volume{
+
+display: inline-block !important;
+
+max-width: 50px !important;
+
+}
+
+}
+
+ @media screen and (min-width: 438px) { 
+
+.plyr__volume{
+
+display: none !important;
+
+min-width: 0px !important;
+
+}
+
+}
+
+.plyr input[type=range]:active::-webkit-slider-thumb{background:#ff6600 !important;border-color:#fff;-webkit-transform:scale(1.25);transform:scale(1.25)}.plyr input[type=range]:active::-moz-range-thumb{background:#ff6600 !important;border-color:#fff;transform:scale(1.25)}.plyr input[type=range]:active::-ms-thumb{background:#ff6600 !important;border-color:#fff;transform:scale(1.25)}
+
+.plyr__controls button:hover, .plyr__controls button:focus{
+
+background-color: #ff6600 !important;
+
+}
+
+.plyr__progress--played,.plyr__volume--display{z-index:1;color:#ff6600 !important;background:0 0;transition:none}
+
+.plyr input[type=range]::-ms-fill-lower{height:8px;border:0;border-radius:4px;-ms-user-select:none;user-select:none;background:#ff6600 !important}
+
+/* This is end of plyr control override css */
+
+/* This is the synopsis image overlay */
+
+a{
+
+text-decoration: none;
+
+outline: none;
+
+border: none;
+
+}
+
+.overlay {
+
+  position: fixed; 
+
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  top: 0; 
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  background-color: #ffffff00;
+
+  z-index: 2;
+
+  cursor: pointer;
+
+}
+
+/* This is end of the synopsis image overlay */
+
+.columnist{
+
+position: relative;
+
+display: inline-block;
+
+padding : 0;
+
+margin: 0;
+
+margin-right: 5px;
+
+margin-left: 5px;
+
+margin-bottom: 5px;
+
+top: 0;
+
+left: 0;
+
+text-align: center;
+
+cursor: pointer;
+
+width: 20%;
+
+height: 26px;
+
+border-radius: 9px;
+
+background-color: #ff9900;
+
+color: black;
+
+font-size: 13px;
+
+font-family: Georgia, Times, "Times New Roman", serif;
+
+text-transform: uppercase;
+
+vertical-align: middle;
+
+z-index: 9;
+
+}
+
+.columnist p{
+
+text-align: center ;
+
+padding-top: 5px;
+
+z-index: 9;
+
+}
+
+video, .player {
+
+background-color: black;
+
+background-repeat: no-repeat;
+
+		  background-size: 10%; 
+
+		  background-position: 50% 50%;
+
+     white-space: nowrap; 
+
+}
+
+.central {
+
+position: absolute;
+
+top: 43%;
+
+left: calc(48% - 12px);
+
+width: 50px;
+
+height: 50px;
+
+z-index: 9;
+
+color: #ffffff00;
+
+border-radius: 50%;
+
+border: 3px solid white;
+
+}
+
+#playb, #pauseb{
+
+text-align: center;
+
+  font-size: 35px;
+
+color:#fff;
+
+width: 50px;
+
+outline: none;
+
+z-index: 9;
+
+padding: 0px;
+
+}
+
+#playb{
+
+position: absolute;
+
+top: 33%;
+
+left: 1%;
+
+}
+
+#pauseb{
+
+position: absolute;
+
+top: 33%;
+
+left: -7%;
+
+}
+
+#player:before{
+
+content:" ";
+
+position: absolute;
+
+right: 10px;
+
+bottom: 10px;
+
+width: 50px;
+
+height: 50px;
+
+background-color: white;
+
+}
+
+#popup, #1080popup, #720popup {
+
+  position: relative;
+
+  display: inline-block;
+
+  cursor: pointer;
+
+  -webkit-user-select: none;
+
+  -moz-user-select: none;
+
+  -ms-user-select: none;
+
+  user-select: none;
+
+}
+
+/* The actual popup */
+
+/* Popup arrow */
+
+.popupext::after{
+
+  content: "";
+
+  position: absolute;
+
+  top: 100%;
+
+  left: 50%;
+
+  margin-left: -5px;
+
+  border-width: 5px;
+
+  border-style: solid;
+
+  border-color: #555 transparent transparent transparent;
+
+}
+
+.popupext{
+
+display: none;
+
+  width: 70px;
+
+  background-color: #555;
+
+  color: red !important;
+
+  text-decoration: none;
+
+  text-align: center;
+
+  border-radius: 6px;
+
+  padding: 8px 0;
+
+  position: absolute;
+
+  z-index: 1;
+
+  bottom: 110%;
+
+  left: 130%;
+
+  margin-left: -80px;
+
+ -webkit-animation: fadeIn 1s;
+
+  animation: fadeIn 1s;
+
+}
+
+#myPopup a, #myPopu a, #myPop a{
+
+color: red !important;
+
+}
+
+.columnist:hover, .columns:hover{
+
+background-color: #ff6600;
+
+}
+
+.rowss{
+
+display: none;
+
+}
